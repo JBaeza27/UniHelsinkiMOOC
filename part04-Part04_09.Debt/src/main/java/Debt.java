@@ -25,5 +25,5 @@ public class Debt {
         this.balance *= this.interestRate;
     }
     
-    
+   
 }
