@@ -16,7 +16,7 @@ public class Main {
 
         System.out.println("weighings performed: " + childrensHospital.weighings());
 
-        childrensHospital.weigh(ethan);
+        childrensHospital.weigh(ethan); //if we want to just do weighings but not returing their weight
         childrensHospital.weigh(ethan);
         childrensHospital.weigh(ethan);
         childrensHospital.weigh(ethan);
