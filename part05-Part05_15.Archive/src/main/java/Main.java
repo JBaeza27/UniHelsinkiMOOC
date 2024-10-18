@@ -23,15 +23,14 @@ public class Main {
             if(name.isEmpty()){
                 break;
             }
-            Archive item = new Archive(identifier,name);
-            list.add(item);
+            Archive item = new Archive(identifier, name);
+            if(!(list.contains(item))){
+                list.add(item);
+            }
         }
         System.out.println("==Items==");
         for(Archive item : list){
             System.out.println(item);
         }
-        
-
-
     }
 }

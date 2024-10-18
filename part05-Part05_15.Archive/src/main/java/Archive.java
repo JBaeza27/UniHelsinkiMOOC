@@ -12,9 +12,10 @@ public class Archive {
     private String name;
     private String identifier;
 
-    public Archive(String name, String identifier) {
-        this.name = name;
+    public Archive(String identifier, String name) {
         this.identifier = identifier;
+        this.name = name;
+        
     }
     public boolean equals(Object compared){
         
@@ -26,7 +27,7 @@ public class Archive {
         }
         
         Archive comparedArchive = (Archive) compared;
-        if(this.identifier.equals(comparedArchive) && this.name.equals(comparedArchive.name)){
+        if(this.identifier.equals(comparedArchive.identifier)){
             return true;
         }else{
             return false;
@@ -35,7 +36,7 @@ public class Archive {
 
     @Override
     public String toString() {
-        return this.name + ": " + this.identifier;
+        return this.identifier + ": " + this.name;
     }
     
     
